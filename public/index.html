@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+	<meta charset="UTF-8">
+	<script src="angular.min.js"></script>
+	<script src="angular-route.js"></script>
+	<script src="angular-resource.js"></script>
+	<script src="app.js"></script>
+	<title>Testing ng-save</title>
+</head>
+<body ng-controller="HomeController">
+	<p>Save some kind of object</p>
+	<p>Specifically: {{testObject}}</p>
+	<button ng-save-object="{{ testObject }}" ng-save-route="someRoute">Save</button>
+</body>
+</html>
